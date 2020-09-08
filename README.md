@@ -4,11 +4,12 @@ ManaFlair Decentraland Avatar Aura System
 ## Concept
 User clicks a button entity (a cube button with words 'Load ManaFlair Aura') in the scene.
 
-User address is read from browser, checked if exists in Lemursiv Aura Database in node mongodb (server code from skr-v/PixelArtDCL/server/) 
-If not existing then ADD new user name (eth public address) to the database.
-User can then add entities to their avatar here - Attach an entity to the player: https://docs.decentraland.org/development-guide/entity-positioning/#attach-an-entity-to-the-player  using Attachable.PLAYER type.
+User address is read from browser, checked if exists in Lemursiv Aura Database in node mongodb (server code from skr-v/PixelArtDCL/server/)
+
+If not existing then ADD new user username (eth public address) to the database.
+User can then attach entities from the scene to their avatar.  Code here - Attach an entity to the player: https://docs.decentraland.org/development-guide/entity-positioning/#attach-an-entity-to-the-player  using the Attachable.PLAYER type.
 When an entity is attached, add that entity name to the Database user also. For example, Coffee, Matcha, Yerba Mate. Use example.glb models for now.
-IF a user already has an account in the database then attach the entities to their avatar.
+IF a username already has an account in the database then attach the entities to their avatar.  New copies of entities may need to be loaded.
 
 Code snippets below.
 
